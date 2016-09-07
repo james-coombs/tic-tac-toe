@@ -113,8 +113,29 @@
       </div>
     </div>
 
-    <button type="button" id="sign-out-button" class="btn btn-primary btn-lg">Sign Out</button>
+  <!-- Button-trigger-sign-out-modal -->
+  <button type="button" id="sign-out-modal-button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#sign-out-modal">
+    Sign Out
+  </button>
+
+  <!-- sign-out-modal -->
+  <div class="modal fade" id="sign-out-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="sign-out-modal-label">Signed Out!</h4>
+        </div>
+        <div class="modal-body">
+          You Signed Out
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
   </div>
+</div>
 
   <nav class="navbar">
     <button type="button" id="new-game-button" class="btn btn-default navbar-btn">New Game</button>
