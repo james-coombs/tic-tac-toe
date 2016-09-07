@@ -9,7 +9,6 @@
 
 <body class="container-fluid">
 
-  <div class="user-info-container">
     <!-- Button-trigger-sign-up-modal -->
     <button type="button" id="sign-up-modal-button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#sign-up-modal">
         Sign Up
@@ -24,144 +23,132 @@
             <h4 class="modal-title" id="sign-up-modal-label">Sign Up</h4>
           </div>
           <div class="modal-body">
-            <form>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Email Address</label>
-                <input type="email" class="form-control" id="sign-up-email" placeholder="Email">
+
+                <form id="createUser">
+                  <input name="credentials[email]" type="text" value="an@example.email">
+                  <input name="credentials[password]" type="password" value="an example password">
+                  <input name="credentials[password_confirmation]" type="password" value="an example password">
+                  <input type="Submit" value="Create User">
+                </form>
+
               </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="sign-up-password" placeholder="Password">
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
               </div>
-            </form>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Confirm Password</label>
-              <input type="password" class="form-control" id="confirm-sign-up-password" placeholder="Confirm Password">
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="submit" class="btn btn-primary">Submit</button>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Button-trigger-sign-in-modal -->
-    <button type="button" id="sign-in-modal-button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#sign-in-modal">
+      <!-- Button-trigger-sign-in-modal -->
+      <button type="button" id="sign-in-modal-button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#sign-in-modal">
         Sign In
       </button>
 
-    <!-- sign-in-modal -->
-    <div class="modal fade" id="sign-in-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="sign-in-modal-label">Sign In</h4>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="sign-in-email" placeholder="Email">
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="sign-in-password" placeholder="Password">
-              </div>
+      <!-- sign-in-modal -->
+      <div class="modal fade" id="sign-in-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="sign-in-modal-label">Sign In</h4>
+            </div>
+            <div class="modal-body">
+
+              <form id=signInUser>
+                <input name="credentials[email]" type="text" value="an@example.email">
+                <input name="credentials[password]" type="password" value="an example password">
+                <input type="Submit" value="Sign In">
             </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Submit</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Button-trigger-change-password-modal -->
-    <button type="button" id="change-password-modal-button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#change-password-modal">
+      <!-- Button-trigger-change-password-modal -->
+      <button type="button" id="change-password-modal-button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#change-password-modal">
         Change Password
       </button>
 
-    <!-- change-password-modal -->
-    <div class="modal fade" id="change-password-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="cahnge-password-modal-label">Change Password</h4>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Old Password</label>
-                <input type="email" class="form-control" id="change-password-old-password" placeholder="Old Password">
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">New Password</label>
-                <input type="password" class="form-control" id="change-password-new-password" placeholder="New Password">
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Submit</button>
+      <!-- change-password-modal -->
+      <div class="modal fade" id="change-password-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="cahnge-password-modal-label">Change Password</h4>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Old Password</label>
+                  <input type="email" class="form-control" id="change-password-old-password" placeholder="Old Password">
+                  <label for="exampleInputPassword1">New Password</label>
+                  <input type="password" class="form-control" id="change-password-new-password" placeholder="New Password">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Submit</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <button type="button" id="sign-out-button" class="btn btn-primary btn-lg">Sign Out</button>
-  </div>
+      <button type="button" id="sign-out-button" class="btn btn-primary btn-lg">Sign Out</button>
 
-  <nav class="navbar">
-    <button type="button" id="new-game-button" class="btn btn-default navbar-btn">New Game</button>
-    <button type="button" id="save-game-button" class="btn btn-default navbar-btn">Save Game</button>
-    <button type="button" id="past-game-button" class="btn btn-default navbar-btn">Past Game</button>
-  </nav>
 
-  <h1>Tic-Tac-Toe</h1>
-  <p class="player-x-title">Player X</p>
-  <p class="player-o-title">Player O</p>
+    <nav class="navbar">
+      <button type="button" id="new-game-button" class="btn btn-default navbar-btn">New Game</button>
+      <button type="button" id="save-game-button" class="btn btn-default navbar-btn">Save Game</button>
+      <button type="button" id="past-game-button" class="btn btn-default navbar-btn">Past Game</button>
+    </nav>
 
-  <div class="board-container"></div>
-  <div class="game-board">
-    <div class="top-row">
-      <div class="col-xs-4 game-cell" id="top-left">
-        top-left
+    <h1>Tic-Tac-Toe</h1>
+    <p class="player-x-title">Player X</p>
+    <p class="player-o-title">Player O</p>
+
+    <div class="board-container"></div>
+    <div class="game-board">
+      <div class="top-row">
+        <div class="col-xs-4 game-cell" id="top-left">
+          top-left
+        </div>
+        <div class="col-xs-4 game-cell" id="top-middle">
+          top-middle
+        </div>
+        <div class="col-xs-4 game-cell" id="top-right">
+          top-right
+        </div>
       </div>
-      <div class="col-xs-4 game-cell" id="top-middle">
-        top-middle
+      <div class="middle-row">
+        <div class="col-xs-4 game-cell" id="middle-left">
+          middle-left
+        </div>
+        <div class="col-xs-4 game-cell" id="middle-middle">
+          middle-middle
+        </div>
+        <div class="col-xs-4 game-cell" id="middle-right">
+          middle
+        </div>
       </div>
-      <div class="col-xs-4 game-cell" id="top-right">
-        top-right
+      <div class="bottom-row">
+        <div class="col-xs-4 game-cell" id="bottom-left">
+          bottom-left
+        </div>
+        <div class="col-xs-4 game-cell" id="bottom-middle">
+          bottom-middle
+        </div>
+        <div class="col-xs-4 game-cell" id="bottom-right">
+          bottom-right
+        </div>
       </div>
     </div>
-    <div class="middle-row">
-      <div class="col-xs-4 game-cell" id="middle-left">
-        middle-left
-      </div>
-      <div class="col-xs-4 game-cell" id="middle-middle">
-        middle-middle
-      </div>
-      <div class="col-xs-4 game-cell" id="middle-right">
-        middle
-      </div>
-    </div>
-    <div class="bottom-row">
-      <div class="col-xs-4 game-cell" id="bottom-left">
-        bottom-left
-      </div>
-      <div class="col-xs-4 game-cell" id="bottom-middle">
-        bottom-middle
-      </div>
-      <div class="col-xs-4 game-cell" id="bottom-right">
-        bottom-right
-      </div>
-    </div>
-  </div>
 
 </body>
 

@@ -1,11 +1,9 @@
 'use strict';
 
 const onSuccess = function (data) {
-  if (data.users) {
-    console.log(data.users);
-  } else {
-    console.table(data.users);
-  }
+  if (data) {
+    console.log(data);
+}
 };
 
 const onError = function (response) {

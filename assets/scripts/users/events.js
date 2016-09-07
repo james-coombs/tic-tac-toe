@@ -2,7 +2,7 @@
 
 const api = require('./api');
 const ui = require('./ui');
-const getFormFields = require('../../../lib/get-form-fields');
+//const getFormFields = require('../../../lib/get-form-fields');
 
 
 const onCreateUser = function (event) {
@@ -12,6 +12,14 @@ const onCreateUser = function (event) {
     .fail(ui.onError);
 };
 
+const onSignInUser = function (event) {
+  event.preventDefault();
+  api.signInUser(event.target)
+    .done(ui.onSuccess)
+    .fail(ui.onError);
+};
+
 module.exports = {
   onCreateUser,
+  onSignInUser,
 };

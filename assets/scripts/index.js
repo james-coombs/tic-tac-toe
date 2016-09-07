@@ -5,5 +5,6 @@ require('./example');
 const events = require('./users/events');
 
 $(() => {
-  $('#sign-up-modal').on('submit', events.onCreateUser);
+  $('#createUser').on('submit', events.onCreateUser);
+  $('#signInUser').on('submit', events.onSignInUser);
 });
