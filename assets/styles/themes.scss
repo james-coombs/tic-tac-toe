@@ -1,6 +1,6 @@
-$unit: 30px;
+$unit: 10px;
 $width: (4 * $unit);
-$height: (3 * $unit);
+$height: (4 * $unit);
 
 body {
   background-color: $background-color;
@@ -24,10 +24,10 @@ h1 {
 .bottom-row > .col-xs-4 {
   border: 2px solid $white;
   box-sizing: border-box;
-  height: 100px;
+  height: $height;
   margin: 3px;
   padding: 50px;
-  width: 100px;
+  width: $width;
 }
 
 

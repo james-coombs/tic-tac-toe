@@ -1,7 +1,12 @@
 'use strict';
 
-// user require with a reference to bundle the file and use it in this file
-// var example = require('./example');
-
-// use require without a reference to ensure a file is bundled
 require('./example');
+
+const events = require('./users/events');
+
+$(() => {
+  $('#createUser').on('submit', events.onCreateUser);
+  $('#signInUser').on('submit', events.onSignInUser);
+  $('#changePassword').on('submit', events.onChangePassword);
+  $('#signOut').on('click', events.onSignOut);
+});
