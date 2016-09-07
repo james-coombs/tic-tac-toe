@@ -1,12 +1,10 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
-
 $background-color: #4e4e4e;
 $font-color: #dfdfdf;
-
 $unit: 30px;
 $width: (4 * $unit);
-$height:(3 * $unit);
+$height: (3 * $unit);
 
 body {
   background-color: $background-color;
@@ -14,9 +12,10 @@ body {
 }
 
 .board-wrapper {
-  width: 50%;
-  margin: 0 25%;
+  margin: 0 25;
   text-align: center;
+  width: 50%;
+
 }
 
 .col-xs-4 {
