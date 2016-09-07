@@ -25,16 +25,15 @@
           <div class="modal-body">
 
                 <form id="createUser">
-                  <input name="credentials[email]" type="text" value="an@example.email">
-                  <input name="credentials[password]" type="password" value="an example password">
-                  <input name="credentials[password_confirmation]" type="password" value="an example password">
+                  <input name="credentials[email]" type="text" placeholder="Email">
+                  <input name="credentials[password]" type="password" placeholder="Password">
+                  <input name="credentials[password_confirmation]" type="password" placeholder="Confirm Password">
                   <input type="Submit" value="Create User">
                 </form>
 
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-primary">Submit</button>
               </div>
           </div>
         </div>
@@ -56,14 +55,13 @@
             <div class="modal-body">
 
               <form id=signInUser>
-                <input name="credentials[email]" type="text" value="an@example.email">
-                <input name="credentials[password]" type="password" value="an example password">
+                <input name="credentials[email]" type="text" placeholder="Email">
+                <input name="credentials[password]" type="password" placeholder="Password">
                 <input type="Submit" value="Sign In">
             </form>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Submit</button>
             </div>
           </div>
         </div>
@@ -83,18 +81,15 @@
               <h4 class="modal-title" id="cahnge-password-modal-label">Change Password</h4>
             </div>
             <div class="modal-body">
-              <form>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Old Password</label>
-                  <input type="email" class="form-control" id="change-password-old-password" placeholder="Old Password">
-                  <label for="exampleInputPassword1">New Password</label>
-                  <input type="password" class="form-control" id="change-password-new-password" placeholder="New Password">
-                </div>
+
+              <form id="changePassword">
+                <input name="passwords[old]" type="password" placeholder="Old Password">
+                <input name="passwords[new]" type="password" placeholder="New Password">
+                <input type="Submit" value="Change Password">
               </form>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Submit</button>
             </div>
           </div>
         </div>

@@ -10,7 +10,12 @@ const onError = function (response) {
   console.error(response);
 };
 
+const changePasswordSuccess = () => {
+  console.log('password changed');
+};
+
 module.exports = {
   onSuccess,
   onError,
+  changePasswordSuccess
 };

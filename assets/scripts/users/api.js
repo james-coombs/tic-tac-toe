@@ -19,7 +19,19 @@ const signInUser = function (form) {
   });
 };
 
+const changePassword = (data) => {
+  return $.ajax({
+    url: app.host + '/change-password/' + app.id,
+    method: 'PATCH',
+    data: data,
+    headers: {
+      Authorization: 'Token token=' + user.token,
+    },
+  });
+};
+
 module.exports = {
 createUser,
 signInUser,
+changePassword,
 };
