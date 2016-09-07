@@ -7,6 +7,18 @@ body {
   color: $font-color;
 }
 
+h1 {
+  text-align: center;
+}
+
+.player-x-title {
+  text-align: left;
+}
+
+.player-o-title {
+  text-align: right;
+}
+
 .top-row  > .col-xs-4,
 .middle-row  > .col-xs-4,
 .bottom-row > .col-xs-4 {
