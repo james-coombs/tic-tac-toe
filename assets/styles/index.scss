@@ -1,26 +1,7 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
 @import 'colors';
 
-$unit: 30px;
-$width: (4 * $unit);
-$height: (3 * $unit);
-
-body {
-  background-color: $background-color;
-  color: $font-color;
-}
-
-.board-wrapper {
-  margin: 0 25;
-  text-align: center;
-  width: 50%;
-
-}
-
-.col-xs-4 {
-  border: 2px solid $white;
-  box-sizing: border-box;
-  height: $height;
-  width: $width;
-}
+@import 'themes';
