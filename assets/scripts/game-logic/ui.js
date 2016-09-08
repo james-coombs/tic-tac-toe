@@ -9,6 +9,11 @@ const newGameSuccess = function (data) {
   }
 };
 
+const onError = function () {
+  console.log('Something Broke');
+};
+
 module.exports = {
   newGameSuccess,
+  onError
 };
