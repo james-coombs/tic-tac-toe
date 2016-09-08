@@ -19,19 +19,30 @@ const signInUser = function (form) {
   });
 };
 
-const changePassword = (data) => {
+const changePassword = function (data) {
   return $.ajax({
-    url: app.host + '/change-password/' + app.id,
+    url: app.host + '/change-password/' + app.user.id,
     method: 'PATCH',
-    data: data,
     headers: {
-      Authorization: 'Token token=' + data.token,
+      Authorization: 'Token token=' + app.user.token,
+    },
+    data: data,
+  });
+};
+
+const signOutUser = function () {
+  return $.ajax({
+    url: app.host + '/sign-out/' + app.user.id,
+    method: 'DELETE',
+    headers: {
+      Authorization: 'Token token=' + app.user.token,
     },
   });
 };
 
 module.exports = {
-createUser,
-signInUser,
-changePassword,
+  createUser,
+  signInUser,
+  changePassword,
+  signOutUser,
 };

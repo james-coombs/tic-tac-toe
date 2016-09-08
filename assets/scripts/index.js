@@ -8,5 +8,5 @@ $(() => {
   $('#createUser').on('submit', events.onCreateUser);
   $('#signInUser').on('submit', events.onSignInUser);
   $('#changePassword').on('submit', events.onChangePassword);
-  $('#signOut').on('click', events.onSignOut);
+  $('#sign-out-modal-button').on('click', events.onSignOutUser);
 });
