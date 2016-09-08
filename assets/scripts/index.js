@@ -2,11 +2,14 @@
 
 require('./example');
 
-const events = require('./users/events');
+const userEvents = require('./users/events');
+
+const gameEvents = require('./game-logic/events');
 
 $(() => {
-  $('#createUser').on('submit', events.onCreateUser);
-  $('#signInUser').on('submit', events.onSignInUser);
-  $('#changePassword').on('submit', events.onChangePassword);
-  $('#sign-out-modal-button').on('click', events.onSignOutUser);
+  $('#createUser').on('submit', userEvents.onCreateUser);
+  $('#signInUser').on('submit', userEvents.onSignInUser);
+  $('#changePassword').on('submit', userEvents.onChangePassword);
+  $('#sign-out-modal-button').on('click', userEvents.onSignOutUser);
+  $('#new-game-button').on('click', gameEvents.onCreateGame);
 });
