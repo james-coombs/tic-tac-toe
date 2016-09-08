@@ -13,8 +13,6 @@ const newGame = function (data) {
   });
 };
 
-
 module.export = {
   newGame,
-
 };
