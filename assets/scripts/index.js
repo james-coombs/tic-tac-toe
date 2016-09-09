@@ -6,7 +6,6 @@ const userEvents = require('./users/events');
 
 const gameEvents = require('./game-logic/events');
 
-
 $(() => {
   $('#createUser').on('submit', userEvents.onCreateUser);
   $('#signInUser').on('submit', userEvents.onSignInUser);
@@ -14,5 +13,7 @@ $(() => {
   $('#sign-out-modal-button').on('click', userEvents.onSignOutUser);
   $('#new-game-button').on('click', gameEvents.onNewGame);
   $('.col-xs-4').on('click', gameEvents.setCharacter, gameEvents.setArray);
-  //$('.col-xs-4').on('click', gameEvents.setO);
+  $('.col-xs-4').on('click', gameEvents.setArray);
+  $('#new-game-button').on('click', gameEvents.clearGameBoardArray);
+  $('.col-xs-4').on('click', gameEvents.isValidMove);
 });

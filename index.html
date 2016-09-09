@@ -9,91 +9,91 @@
 
 <body class="container-fluid">
 
-    <!-- Button-trigger-sign-up-modal -->
-    <button type="button" id="sign-up-modal-button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#sign-up-modal">
+  <!-- Button-trigger-sign-up-modal -->
+  <button type="button" id="sign-up-modal-button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#sign-up-modal">
         Sign Up
       </button>
 
-    <!-- sign-up-modal -->
-    <div class="modal fade" id="sign-up-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="sign-up-modal-label">Sign Up</h4>
-          </div>
-          <div class="modal-body">
+  <!-- sign-up-modal -->
+  <div class="modal fade" id="sign-up-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="sign-up-modal-label">Sign Up</h4>
+        </div>
+        <div class="modal-body">
 
-                <form id="createUser">
-                  <input name="credentials[email]" type="text" placeholder="Email">
-                  <input name="credentials[password]" type="password" placeholder="Password">
-                  <input name="credentials[password_confirmation]" type="password" placeholder="Confirm Password">
-                  <input type="Submit" value="Create User">
-                </form>
+          <form id="createUser">
+            <input name="credentials[email]" type="text" placeholder="Email">
+            <input name="credentials[password]" type="password" placeholder="Password">
+            <input name="credentials[password_confirmation]" type="password" placeholder="Confirm Password">
+            <input type="Submit" value="Create User">
+          </form>
 
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
-          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
+    </div>
+  </div>
 
-      <!-- Button-trigger-sign-in-modal -->
-      <button type="button" id="sign-in-modal-button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#sign-in-modal">
+  <!-- Button-trigger-sign-in-modal -->
+  <button type="button" id="sign-in-modal-button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#sign-in-modal">
         Sign In
       </button>
 
-      <!-- sign-in-modal -->
-      <div class="modal fade" id="sign-in-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="sign-in-modal-label">Sign In</h4>
-            </div>
-            <div class="modal-body">
+  <!-- sign-in-modal -->
+  <div class="modal fade" id="sign-in-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="sign-in-modal-label">Sign In</h4>
+        </div>
+        <div class="modal-body">
 
-              <form id=signInUser>
-                <input name="credentials[email]" type="text" placeholder="Email">
-                <input name="credentials[password]" type="password" placeholder="Password">
-                <input type="Submit" value="Sign In">
-            </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-          </div>
+          <form id=signInUser>
+            <input name="credentials[email]" type="text" placeholder="Email">
+            <input name="credentials[password]" type="password" placeholder="Password">
+            <input type="Submit" value="Sign In">
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
+    </div>
+  </div>
 
-      <!-- Button-trigger-change-password-modal -->
-      <button type="button" id="change-password-modal-button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#change-password-modal">
+  <!-- Button-trigger-change-password-modal -->
+  <button type="button" id="change-password-modal-button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#change-password-modal">
         Change Password
       </button>
 
-      <!-- change-password-modal -->
-      <div class="modal fade" id="change-password-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="cahnge-password-modal-label">Change Password</h4>
-            </div>
-            <div class="modal-body">
+  <!-- change-password-modal -->
+  <div class="modal fade" id="change-password-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="cahnge-password-modal-label">Change Password</h4>
+        </div>
+        <div class="modal-body">
 
-              <form id="changePassword">
-                <input name="passwords[old]" type="password" placeholder="Old Password">
-                <input name="passwords[new]" type="password" placeholder="New Password">
-                <input type="Submit" value="Change Password">
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-          </div>
+          <form id="changePassword">
+            <input name="passwords[old]" type="password" placeholder="Old Password">
+            <input name="passwords[new]" type="password" placeholder="New Password">
+            <input type="Submit" value="Change Password">
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
+    </div>
+  </div>
 
   <!-- Button-trigger-sign-out-modal -->
   <button type="button" id="sign-out-modal-button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#sign-out-modal">
@@ -119,34 +119,34 @@
   </div>
 
 
-    <nav class="navbar">
-      <button type="button" id="new-game-button" class="btn btn-default navbar-btn">New Game</button>
-      <button type="button" id="save-game-button" class="btn btn-default navbar-btn">Save Game</button>
-      <button type="button" id="past-game-button" class="btn btn-default navbar-btn">Past Game</button>
-    </nav>
+  <nav class="navbar">
+    <button type="button" id="new-game-button" class="btn btn-default navbar-btn">New Game</button>
+    <button type="button" id="save-game-button" class="btn btn-default navbar-btn">Save Game</button>
+    <button type="button" id="past-game-button" class="btn btn-default navbar-btn">Past Game</button>
+  </nav>
 
-    <h1>Tic-Tac-Toe</h1>
-    <p class="player-x-title">Player X</p>
-    <p class="player-o-title">Player O</p>
+  <h1>Tic-Tac-Toe</h1>
+  <p class="player-x-title">Player X</p>
+  <p class="player-o-title">Player O</p>
 
-    <div class="board-container"></div>
-    <div class="game-board">
-      <div class="top-row">
-        <div class="col-xs-4 0" id="cell-0">top-left</div>
-        <div class="col-xs-4 1" id="cell-1">top-middle</div>
-        <div class="col-xs-4 2" id="cell-2">top-right</div>
-      </div>
-      <div class="middle-row">
-        <div class="col-xs-4 3" id="cell-3">middle-left</div>
-        <div class="col-xs-4 4" id="cell-4">middle-middle</div>
-        <div class="col-xs-4 5" id="cell-5">middle-right</div>
-      </div>
-      <div class="bottom-row">
-        <div class="col-xs-4 6" id="cell-6">bottom-left</div>
-        <div class="col-xs-4 7" id="cell-7">bottom-middle</div>
-        <div class="col-xs-4 8" id="cell-8">bottom-right</div>
-      </div>
+  <div class="board-container"></div>
+  <div class="game-board">
+    <div class="top-row">
+      <div class="col-xs-4 0" data-id=0 id="0">0</div>
+      <div class="col-xs-4 1" id="1">1</div>
+      <div class="col-xs-4 2" id="2">2</div>
     </div>
+    <div class="middle-row">
+      <div class="col-xs-4 3" id="3">3</div>
+      <div class="col-xs-4 4" id="4">3</div>
+      <div class="col-xs-4 5" id="5">4</div>
+    </div>
+    <div class="bottom-row">
+      <div class="col-xs-4 6" id="6">5</div>
+      <div class="col-xs-4 7" id="7">6</div>
+      <div class="col-xs-4 8" id="8">7</div>
+    </div>
+  </div>
 
 </body>
 
