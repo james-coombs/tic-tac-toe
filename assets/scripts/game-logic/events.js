@@ -42,6 +42,13 @@ const setCharacter = function (event) {
   }
 };
 
+// const setArray = function (event) {
+//   event.preventDefault();
+//   let data = $('#top-left').contents();
+//   console.log(data);
+//
+// };
+
 
     //  let position = 0;
     //  for (let i = 0; i < gameBoardArray.length; i++) {
@@ -53,4 +60,5 @@ module.exports = {
   onNewGame,
   gameBoardArray,
   setCharacter,
+  //setArray,
 };
