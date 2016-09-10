@@ -2,7 +2,7 @@
 
 const app = require('../app');
 
-const newGame = (data) =>{
+const newGame = function (data) {
   return $.ajax({
     url: app.host + '/games',
     method: 'POST',
@@ -13,6 +13,18 @@ const newGame = (data) =>{
   });
 };
 
+const updateGame = function (data) {
+  return $.ajax({
+    url: app.host + '/games/' + app.game.id,
+    method: 'PATCH',
+    headers: {
+      Authorization: 'Token token=' + app.user.token,
+    },
+    data,
+  });
+};
+
 module.exports = {
   newGame,
+  updateGame,
 };
