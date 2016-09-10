@@ -25,18 +25,18 @@ const onNewGame = function onNewGame(event) {
     .fail(ui.onError);
 };
 
+// allows player to place x/o of space is unocupied
+// adds x/o to index value of array
 const setGame = function () {
   let index;
   if (player === 1 && $(this).text() === ''){
       $(this).text('X');
-      //gameBoardArray[] = 'X';
         player = 2;
         gameTurns++;
         api.updateGame();
 
   } if (player === 2 && $(this).text() === ''){
       $(this).text('O');
-      //gameBoardArray[] = 'O';
         player = 1;
         gameTurns++;
         api.updateGame();
@@ -46,42 +46,6 @@ const setGame = function () {
   gameBoardArray[index] = $(this).text();
   console.log(gameBoardArray);
 };
-
-
-
-
-// // sets x/o on the board, increaces game turn counter
-// const setCharacter = function(event) {
-//   gameTurns++;
-//   let id = this.id;
-//   event.preventDefault();
-//
-//   if (app.player === 'X') {
-//     app.player = 'O';
-//     let cellclicked = event.target;
-//     $(cellclicked).text('O');
-//     gameBoardArray[id] = app.player;
-//     console.log(gameBoardArray);
-//
-//   } else if (app.player === 'O') {
-//     app.player = 'X';
-//     let cellclicked = event.target;
-//     $(cellclicked).text('X');
-//
-//
-//     console.log(gameBoardArray);
-//   }
-// };
-
-// checks to see if the cell can be selected for a valid move
-// const isValidMove = function() {
-//   event.preventDefault();
-//   if ($('.game-cell').text === ('')) {
-//     setGame();
-//   } if ($('.game-cell').text !== ('')){
-//     console.log('pick a different cell');
-//   }
-// };
 
 //
 const allX = function(cellOne, cellTwo, cellThree) {
@@ -159,19 +123,6 @@ const checkWinner = function(){
 }
 };
 
-//update board
-
-//track turns
-// const trackTurns = function () {
-//   event.preventDefault;
-//   let turns = 1;
-//   setCharacter runs, turns++;
-//   if turns value % 2 === 0;
-//   allow 'X';
-//
-//   else allow 'O';
-// };
-
 // turns val = 0
 //if turns % 1 = O
 // if turns % 2 = X
@@ -195,8 +146,6 @@ const checkWinner = function(){
 module.exports = {
   onNewGame,
   gameBoardArray,
-  //setCharacter,
-  //isValidMove,
   gameTurns,
   gameIsOver,
   xWins,
