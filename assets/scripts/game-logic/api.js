@@ -49,7 +49,7 @@ const getGamesPlayed = function(data) {
     headers: {
       Authorization: 'Token token=' + app.user.token,
     },
-    data,
+    data: data,
   });
 };
 

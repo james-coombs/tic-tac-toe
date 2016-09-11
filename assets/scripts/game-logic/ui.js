@@ -11,7 +11,7 @@ const newGameSuccess = function (data) {
 const getGameByIdSuccess = function (data) {
   app.game = data.game;
   $('.info').text('You got game id: ' + data.game.id +
-  ' the game looked like: ' + data.game.cells+ ' Was the game over? ' +
+  ' the game array looked like: [' + data.game.cells+ '] Was the game over? ' +
   data.game.over + '.');
   //console.log(data);
 };
@@ -19,7 +19,7 @@ const getGameByIdSuccess = function (data) {
 const getGamesPlayedSuccess = function (data) {
   app.game = data.game;
   $('.info').text('You played ' + data.games.length + ' different games.');
-  console.log(data);
+  // console.log(data);
 };
 
 const onError = function() {

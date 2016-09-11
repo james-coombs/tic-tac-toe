@@ -12,11 +12,12 @@ const onCreateUserSuccess = function(data) {
 const signInSuccess = function(data) {
   app.user = data.user;
   $('.info').text('You are signed in as user id ' + data.user.id + ', press the new game button to play.');
+  $('.game-actions').show();
   //console.log(data);
 };
 
 const onError = function(response) {
-  $('.info').text('Something Broke. Check out:' + response);
+  $('.info').text('You might have made a mistake; Maybe this error response will help: ' + response);
   //console.error(response);
 };
 
@@ -26,8 +27,7 @@ const changePasswordSuccess = function() {
 };
 
 const signOutUserSuccess = function() {
-  $('.info').text('You signed out. Sign in to play again.');
-  console.log('signed out');
+  //console.log('signed out');
 };
 
 module.exports = {

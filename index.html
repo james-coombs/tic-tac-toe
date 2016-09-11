@@ -9,14 +9,8 @@
 
 <body class="container-fluid">
 
-  <nav class="navbar">
-    <button type="button" id="new-game-button" class="btn btn-default navbar-btn">New Game</button>
-    <button type="button" id="get-games-played-button" class="btn btn-default navbar-btn">Get Games Played</button>
-    <form id="get-game-by-id">
-      <input name="getGameById" type="number" placeholder="Game ID">
-      <input type="submit" value="GetGamebyID">
-    </form>
-  </nav>
+  <!--basic user nav-->
+<nav class="sign-in-sign-up">
   <!-- Button-trigger-sign-up-modal -->
   <button type="button" id="sign-up-modal-button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#sign-up-modal">
         Sign Up
@@ -74,6 +68,17 @@
       </div>
     </div>
   </div>
+</nav>
+
+<!--Game actions nav-->
+  <nav class="game-actions">
+    <button type="button" id="new-game-button" class="btn btn-default navbar-btn">New Game</button>
+    <button type="button" id="get-games-played-button" class="btn btn-default navbar-btn">Get Games Played</button>
+    <form id="get-game-by-id">
+      <input name="getGameById" type="number" placeholder="Game ID">
+      <input type="submit" value="GetGamebyID">
+    </form>
+    <button type="button" class="sign-out-button">Sign Out</button>
 
   <!-- Button-trigger-change-password-modal -->
   <button type="button" id="change-password-modal-button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#change-password-modal">
@@ -102,29 +107,8 @@
       </div>
     </div>
   </div>
+</nav>
 
-  <!-- Button-trigger-sign-out-modal -->
-  <button type="button" id="sign-out-modal-button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#sign-out-modal">
-    Sign Out
-  </button>
-
-  <!-- sign-out-modal -->
-  <div class="modal fade" id="sign-out-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="sign-out-modal-label">Signed Out!</h4>
-        </div>
-        <div class="modal-body">
-          You Signed Out
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <h1>Tic-Tac-Toe</h1>
   <h2 class='info'>Sign Up and/or Sign In to Play</h2>
