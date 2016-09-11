@@ -25,7 +25,9 @@ const getGamesPlayedSuccess = function (data) {
 
 const onError = function() {
   //console.log('Something Broke');
-  $('.info').text('Something Broke');
+  $('.info').text('Ah ah ah, you didn`t say the magic word');
+  $('.game-board').hide();
+  $('.game-actions').hide();
 };
 
 module.exports = {
