@@ -7,6 +7,11 @@ const newGameSuccess = function (data) {
   console.log(data);
 };
 
+const getGameByIdSuccess = function (data) {
+  app.game = data.game;
+  console.log(data);
+};
+
 const onError = function() {
   console.log('Something Broke');
 };
@@ -14,4 +19,5 @@ const onError = function() {
 module.exports = {
   newGameSuccess,
   onError,
+  getGameByIdSuccess,
 };

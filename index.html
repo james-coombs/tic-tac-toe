@@ -122,12 +122,13 @@
   <nav class="navbar">
     <button type="button" id="new-game-button" class="btn btn-default navbar-btn">New Game</button>
     <button type="button" id="save-game-button" class="btn btn-default navbar-btn">Save Game</button>
-    <button type="button" id="past-game-button" class="btn btn-default navbar-btn">Past Game</button>
+    <form id="get-game-by-id">
+      <input name="getGameById" type="number" placeholder="Game ID">
+      <input type="submit" value="GetGamebyID">
+    </form>
   </nav>
 
   <h1>Tic-Tac-Toe</h1>
-  <!-- <p class="player-x-title">Player X</p>
-  <p class="player-o-title">Player O</p> -->
 
   <div class="board-container"></div>
   <div class="game-board">

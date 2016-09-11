@@ -14,5 +14,6 @@ $(() => {
   $('#new-game-button').on('click', gameEvents.onNewGame);
   $('.game-cell').on('click', gameEvents.setGame);
   $('#new-game-button').on('click', gameEvents.clearGameBoardArray);
-  $('.game-cell').on('click', gameEvents.gameResolution);
+  //$('.game-cell').on('click', gameEvents.gameResolution);
+  $('#get-game-by-id').on('submit', gameEvents.onGetGameById);
 });
