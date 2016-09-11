@@ -1,9 +1,10 @@
 'use strict';
 
 const app = require('../app.js');
+
 const getFormFields = require('../../../lib/get-form-fields');
 
-const createUser = function (form) {
+const createUser = function(form) {
   return $.ajax({
     url: app.host + '/sign-up',
     method: 'POST',
@@ -11,7 +12,7 @@ const createUser = function (form) {
   });
 };
 
-const signInUser = function (form) {
+const signInUser = function(form) {
   return $.ajax({
     url: app.host + '/sign-in',
     method: 'POST',
@@ -19,7 +20,7 @@ const signInUser = function (form) {
   });
 };
 
-const changePassword = function (data) {
+const changePassword = function(data) {
   return $.ajax({
     url: app.host + '/change-password/' + app.user.id,
     method: 'PATCH',
@@ -30,7 +31,7 @@ const changePassword = function (data) {
   });
 };
 
-const signOutUser = function () {
+const signOutUser = function() {
   return $.ajax({
     url: app.host + '/sign-out/' + app.user.id,
     method: 'DELETE',

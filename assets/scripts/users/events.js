@@ -6,14 +6,14 @@ const api = require('./api');
 
 const ui = require('./ui');
 
-const onCreateUser = function (event) {
+const onCreateUser = function(event) {
   event.preventDefault();
   api.createUser(event.target)
     .done(ui.onCreateUserSuccess)
     .fail(ui.onError);
 };
 
-const onSignInUser = function (event) {
+const onSignInUser = function(event) {
   event.preventDefault();
   $('#new-game-button').show();
   api.signInUser(event.target)
@@ -21,7 +21,7 @@ const onSignInUser = function (event) {
     .fail(ui.onError);
 };
 
-const onChangePassword = function (event) {
+const onChangePassword = function(event) {
   event.preventDefault();
   let data = getFormFields(event.target);
   api.changePassword(data)
@@ -29,7 +29,7 @@ const onChangePassword = function (event) {
     .fail(ui.failure);
 };
 
-const onSignOutUser = function () {
+const onSignOutUser = function() {
   event.preventDefault();
 
   api.signOutUser()

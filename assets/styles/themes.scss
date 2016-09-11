@@ -15,17 +15,9 @@ h2 {
   text-align: center;
 }
 
-.player-x-title {
-  text-align: left;
-}
-
-.player-o-title {
-  text-align: right;
-}
-
-.top-row  > .col-xs-4,
-.middle-row  > .col-xs-4,
-.bottom-row > .col-xs-4 {
+.bottom-row > .col-xs-4,
+.middle-row > .col-xs-4,
+.top-row > .col-xs-4 {
   border: 2px solid $white;
   box-sizing: border-box;
   height: $height;
