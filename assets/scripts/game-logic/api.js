@@ -42,8 +42,20 @@ const getGameById = function(data) {
   });
 };
 
+const getGamesPlayed = function(data) {
+  return $.ajax({
+    url: app.host + '/games',
+    method: 'GET',
+    headers: {
+      Authorization: 'Token token=' + app.user.token,
+    },
+    data,
+  });
+};
+
 module.exports = {
   newGame,
   updateGame,
   getGameById,
+  getGamesPlayed,
 };
