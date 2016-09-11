@@ -11,14 +11,14 @@ const onCreateUser = function(event) {
   $('.game-actions').hide();
   api.createUser(event.target)
     .done(ui.onCreateUserSuccess)
-    .fail(ui.onError);
+    .fail(ui.createUserOnError);
 };
 
 const onSignInUser = function(event) {
   event.preventDefault();
   api.signInUser(event.target)
     .done(ui.signInSuccess)
-    .fail(ui.onError);
+    .fail(ui.createUserOnError);
 };
 
 const onChangePassword = function(event) {
