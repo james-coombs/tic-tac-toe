@@ -12,7 +12,8 @@ const getGameByIdSuccess = function (data) {
   app.game = data.game;
   $('.info').text('You got game id: ' + data.game.id +
   ' the game array looked like: [' + data.game.cells+ '] Was the game over? ' +
-  data.game.over + '.');
+  data.game.over + ' The id of the player was: ' + data.game.player_x.id +
+  ' That player`s email is: ' + data.game.player_x.email);
   //console.log(data);
 };
 

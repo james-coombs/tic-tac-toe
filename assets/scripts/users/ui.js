@@ -13,6 +13,7 @@ const signInSuccess = function(data) {
   app.user = data.user;
   $('.info').text('You are signed in as user id ' + data.user.id + ', press the new game button to play.');
   $('.game-actions').show();
+  $('#new-game-button').show();
   //console.log(data);
 };
 
@@ -27,6 +28,7 @@ const changePasswordSuccess = function() {
 };
 
 const signOutUserSuccess = function() {
+  $('#new-game-button').hide();
   //console.log('signed out');
 };
 
