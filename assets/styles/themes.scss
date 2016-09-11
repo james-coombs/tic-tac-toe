@@ -11,6 +11,10 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  text-align: center;
+}
+
 .player-x-title {
   text-align: left;
 }
@@ -30,6 +34,9 @@ h1 {
   width: $width;
 }
 
+.navbar {
+  clear: both;
+}
 
 .game-board {
   margin: 0 35%;

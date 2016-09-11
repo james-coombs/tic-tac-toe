@@ -9,7 +9,7 @@ const ui = require('./ui');
 const onCreateUser = function (event) {
   event.preventDefault();
   api.createUser(event.target)
-    .done(ui.onSuccess)
+    .done(ui.onCreateUserSuccess)
     .fail(ui.onError);
 };
 

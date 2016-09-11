@@ -9,6 +9,14 @@
 
 <body class="container-fluid">
 
+
+  <nav class="navbar">
+    <button type="button" id="new-game-button" class="btn btn-default navbar-btn">New Game</button>
+    <form id="get-game-by-id">
+      <input name="getGameById" type="number" placeholder="Game ID">
+      <input type="submit" value="GetGamebyID">
+    </form>
+  </nav>
   <!-- Button-trigger-sign-up-modal -->
   <button type="button" id="sign-up-modal-button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#sign-up-modal">
         Sign Up
@@ -82,7 +90,7 @@
         </div>
         <div class="modal-body">
 
-          <form id="changePassword">
+          <form id="change-password">
             <input name="passwords[old]" type="password" placeholder="Old Password">
             <input name="passwords[new]" type="password" placeholder="New Password">
             <input type="Submit" value="Change Password">
@@ -109,7 +117,7 @@
           <h4 class="modal-title" id="sign-out-modal-label">Signed Out!</h4>
         </div>
         <div class="modal-body">
-          <p>You Signed Out</p>
+          You Signed Out
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -119,16 +127,9 @@
   </div>
 
 
-  <nav class="navbar">
-    <button type="button" id="new-game-button" class="btn btn-default navbar-btn">New Game</button>
-    <button type="button" id="save-game-button" class="btn btn-default navbar-btn">Save Game</button>
-    <form id="get-game-by-id">
-      <input name="getGameById" type="number" placeholder="Game ID">
-      <input type="submit" value="GetGamebyID">
-    </form>
-  </nav>
 
   <h1>Tic-Tac-Toe</h1>
+  <h2 id='info'>Create an Account or Login to Play</h2>
 
   <div class="board-container"></div>
   <div class="game-board">
