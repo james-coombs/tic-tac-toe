@@ -4,7 +4,7 @@ const app = require('../app.js');
 
 const newGameSuccess = function (data) {
   app.game = data.game;
-  $('.info').text('You started a new game, id#: ' + data.game.id);
+  $('.info').text('You started a new game, id#: ' + data.game.id + '. It is x`s move.');
   //console.log(data);
 };
 
