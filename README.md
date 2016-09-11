@@ -34,4 +34,5 @@ As a <Player>, I want to <be clearly notified of the end game state>, so that <I
 As a <User>, I want to <View my past game data>, so that <I can see my performance over time>
 As a <Player>, I want to <Re-Open old games that I saved>, so that <I can continue my progress>
 
-Wireframe created before developmetn began:
+Wireframe created before development began:
+http://i.imgur.com/hbg562n.png
