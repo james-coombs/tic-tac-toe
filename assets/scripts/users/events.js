@@ -8,7 +8,7 @@ const ui = require('./ui');
 
 const onCreateUser = function(event) {
   event.preventDefault();
-  $('.game-actions').show();
+  $('.game-actions').hide();
   api.createUser(event.target)
     .done(ui.onCreateUserSuccess)
     .fail(ui.onError);
@@ -16,7 +16,6 @@ const onCreateUser = function(event) {
 
 const onSignInUser = function(event) {
   event.preventDefault();
-  
   api.signInUser(event.target)
     .done(ui.signInSuccess)
     .fail(ui.onError);

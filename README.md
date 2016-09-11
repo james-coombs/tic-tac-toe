@@ -27,12 +27,12 @@ There are unsolved problems which I would like to fixed in the future.
 -Allowing past game retrevial to re-populate the board
 
 User stories created before development began:
-As a <Player>, I want to <play tic tac toe>, so that <I can compete against a friend>
-As a <User>, I want to <register an account>, so that <I can save and track my games>
-As a <Developer>, I want to <interact with a bug-free web app>, so that <I can see how it all works>
-As a <Player>, I want to <be clearly notified of the end game state>, so that <I know the outcome of the game>
-As a <User>, I want to <View my past game data>, so that <I can see my performance over time>
-As a <Player>, I want to <Re-Open old games that I saved>, so that <I can continue my progress>
+As a Player, I want to play tic tac toe, so that I can compete against a friend.
+As a User, I want to register an account, so that I can save and track my games.
+As a Developer, I want to interact with a bug-free web app, so that I can see how it all works.
+As a Player, I want to be clearly notified of the end game state, so that I know the outcome of the game.
+As a User, I want to View my past game data, so that I can see my performance over time.
+As a Player, I want to Re-Open old games that I saved, so that I can continue my progress.
 
 Wireframe created before development began:
 http://i.imgur.com/hbg562n.png
