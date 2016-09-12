@@ -1,6 +1,6 @@
 Web Development Immersive Project 1: Tic Tac Toe
 
-// Link to your hosted game in the URL section of your Github repo.
+https://james-coombs.github.io/project-1-tic-tac-toe/
 
 For this project I used multiple technologies:
 -git
