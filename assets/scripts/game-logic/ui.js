@@ -4,7 +4,7 @@ const app = require('../app.js');
 
 const newGameSuccess = function (data) {
   app.game = data.game;
-  $('.info').text('You started a new game, id#: ' + data.game.id + '. It is x`s move.');
+  $('.info').text('You started a new game, id#: ' + data.game.id + '. It is x\'s move.');
   //console.log(data);
 };
 
@@ -13,7 +13,7 @@ const getGameByIdSuccess = function (data) {
   $('.info').text('You got game id: ' + data.game.id +
   ' the game array looked like: [' + data.game.cells+ '] Was the game over? ' +
   data.game.over + ' The id of the player was: ' + data.game.player_x.id +
-  ' That player`s email is: ' + data.game.player_x.email);
+  ' That player\'s email is: ' + data.game.player_x.email);
   //console.log(data);
 };
 
@@ -25,7 +25,7 @@ const getGamesPlayedSuccess = function (data) {
 
 const onError = function() {
   //console.log('Something Broke');
-  $('.info').text('Ah ah ah, you didn`t say the magic word');
+  $('.info').text('Ah ah ah, you didn\'t say the magic word');
   $('.game-board').hide();
   $('.game-actions').hide();
 };

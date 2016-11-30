@@ -20,14 +20,14 @@ const signInSuccess = function(data) {
 };
 
 const createUserOnError = function() {
-  $('.info').text('You might have made a mistake, usernames must look like `text.text`');
+  $('.info').text('Something went wrong!');
   $('.game-actions').hide();
   $('#new-game-button').hide();
   //console.error(response);
 };
 
 const changePasswordSuccess = function() {
-  $('.info').text('You changed passwords. Don`t forget your credentials!');
+  $('.info').text('You changed passwords. Don\'t forget your credentials!');
   console.log('password changed');
 };
 
