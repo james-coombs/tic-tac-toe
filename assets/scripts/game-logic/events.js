@@ -14,6 +14,14 @@ let gameIsOver = false;
 // variable for X/O switching
 let player = 'x';
 
+
+const onBreakShit = function(){
+  Window.onload = function(){
+  $('#new-game-button');
+};
+};
+
+
 // reset board and 'POST' for new game
 const onNewGame = function onNewGame(event) {
   event.preventDefault();
@@ -200,4 +208,5 @@ module.exports = {
   onGetGamesPlayed,
   hideBoardAfterResolution,
   // renderOldGame,
+  onBreakShit,
 };

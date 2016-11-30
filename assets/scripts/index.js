@@ -7,6 +7,7 @@ const userEvents = require('./users/events');
 const gameEvents = require('./game-logic/events');
 
 $(() => {
+  $('.break-shit').on('click', gameEvents.onBreakShit);
   $('.game-board').hide();
   $('.game-actions').hide();
   $('#new-game-button').hide();
@@ -21,4 +22,5 @@ $(() => {
   $('#get-game-by-id').on('submit', gameEvents.onGetGameById);
   //$('#get-game-by-id').on('submit', gameEvents.createOldGameArray);
   $('#get-games-played-button').on('click', gameEvents.onGetGamesPlayed);
+
 });

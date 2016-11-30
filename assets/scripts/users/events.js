@@ -16,6 +16,7 @@ const onCreateUser = function(event) {
 
 const onSignInUser = function(event) {
   event.preventDefault();
+//  $('#new-game-button').button.form.submit(10);
   api.signInUser(event.target)
     .done(ui.signInSuccess)
     .fail(ui.createUserOnError);
