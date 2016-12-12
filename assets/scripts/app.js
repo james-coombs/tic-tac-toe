@@ -1,7 +1,7 @@
 'use strict';
 
 const app = {
-  host: 'https://aqueous-atoll-85096.herokuapp.com',
+  host: 'https://project-1-tic-tac-toe-api.herokuapp.com',
 };
 
 module.exports = app;

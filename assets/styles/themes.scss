@@ -3,7 +3,10 @@ $width: (4 * $unit);
 $height: (4 * $unit);
 
 body {
-  background-color: $background-color;
+  background: url('../../images/green_background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+  background-size: cover;
   color: $font-color;
 }
 
