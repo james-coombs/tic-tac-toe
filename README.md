@@ -26,7 +26,7 @@ There are unsolved problems which I would like to fixed in the future.
 -Improving UX/UI
 -Allowing past game retrevial to re-populate the board
 
-User stories created before development began:
+User stories created before development:
 As a Player, I want to play tic tac toe, so that I can compete against a friend.
 As a User, I want to register an account, so that I can save and track my games.
 As a Developer, I want to interact with a bug-free web app, so that I can see how it all works.
