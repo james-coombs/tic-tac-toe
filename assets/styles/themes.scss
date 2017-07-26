@@ -1,6 +1,7 @@
 $unit: 10px;
 $width: (4 * $unit);
 $height: (4 * $unit);
+$colorBlack: #000000;
 
 body {
   background: url('../../images/green_background.jpg') no-repeat center center fixed;
@@ -18,15 +19,19 @@ h2 {
   text-align: center;
 }
 
-.bottom-row > .col-xs-4,
-.middle-row > .col-xs-4,
-.top-row > .col-xs-4 {
+.board-row {
+     white-space: nowrap;
+     overflow: hidden;
+     width: 80%;
+   }
+
+.board-row > .col-xs-4 {
   border: 2px solid $white;
   box-sizing: border-box;
-  height: $height;
-  margin: 3px;
-  padding: 50px;
-  width: $width;
+  height: 12rem;
+  padding: 2px;
+  width: 25%;
+  display: inline-block;
 }
 
 .navbar {
@@ -36,4 +41,14 @@ h2 {
 .game-board {
   margin: 0 35%;
   text-align: center;
+}
+
+input {
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  color: $colorBlack;
+}
+
+.sign-out-button {
+  color: $colorBlack;
 }

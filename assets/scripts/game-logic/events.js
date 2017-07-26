@@ -33,8 +33,6 @@ const onNewGame = function onNewGame(event) {
 const onGetGameById = function(event) {
   event.preventDefault();
   let data = getFormFields(event.target);
-  // console.log(data);
-  //$('.game-board').hide();
   api.getGameById(data)
     .done(ui.getGameByIdSuccess)
     .fail(ui.onError);
@@ -63,7 +61,6 @@ const onGetGamesPlayed = function (data) {
   api.getGamesPlayed(data)
     .done(ui.getGamesPlayedSuccess)
     .fail(ui.onError);
-    //console.log(data);
 };
 
 const gameResolutionXorO = function() {
@@ -71,89 +68,72 @@ const gameResolutionXorO = function() {
   if ((gameBoardArray[0] === 'x') && gameBoardArray[0] === gameBoardArray[1] && gameBoardArray[1] === gameBoardArray[2]) {
     victor = gameBoardArray[0];
     gameIsOver = true;
-    // console.log(victor + ' has won.');
     $('.info').text('The winner is  ' + victor + '. Press the New Game button to play a new game');
   } else if ((gameBoardArray[3] === 'x') && gameBoardArray[3] === gameBoardArray[4] && gameBoardArray[4] === gameBoardArray[5]) {
     gameIsOver = true;
     victor = gameBoardArray[3];
-    // console.log(victor + ' has won.');
     $('.info').text('The winner is  ' + victor + '. Press the New Game button to play a new game');
   } else if ((gameBoardArray[6] === 'x') && gameBoardArray[6] === gameBoardArray[7] && gameBoardArray[7] === gameBoardArray[8]) {
     gameIsOver = true;
     victor = gameBoardArray[6];
-    // console.log(victor + ' has won.');
     $('.info').text('The winner is  ' + victor + '. Press the New Game button to play a new game');
   } else if ((gameBoardArray[0] === 'x') && gameBoardArray[0] === gameBoardArray[3] && gameBoardArray[3] === gameBoardArray[6]) {
     gameIsOver = true;
     victor = gameBoardArray[0];
-    // console.log(victor + ' has won.');
     $('.info').text('The winner is  ' + victor + '. Press the New Game button to play a new game');
   } else if ((gameBoardArray[1] === 'x') && gameBoardArray[1] === gameBoardArray[4] && gameBoardArray[4] === gameBoardArray[7]) {
     gameIsOver = true;
     victor = gameBoardArray[1];
-    // console.log(victor + ' has won.');
     $('.info').text('The winner is  ' + victor + '. Press the New Game button to play a new game');
   } else if ((gameBoardArray[2] === 'x') && gameBoardArray[2] === gameBoardArray[5] && gameBoardArray[5] === gameBoardArray[8]) {
     gameIsOver = true;
     victor = gameBoardArray[2];
-    // console.log(victor + ' has won.');
     $('.info').text('The winner is  ' + victor + '. Press the New Game button to play a new game');
   } else if ((gameBoardArray[0] === 'x') && gameBoardArray[0] === gameBoardArray[4] && gameBoardArray[4] === gameBoardArray[8]) {
     gameIsOver = true;
     victor = gameBoardArray[0];
-    // console.log(victor + ' has won.');
     $('.info').text('The winner is  ' + victor + '. Press the New Game button to play a new game');
   } else if ((gameBoardArray[2] === 'x') && gameBoardArray[2] === gameBoardArray[4] && gameBoardArray[4] === gameBoardArray[6]) {
     gameIsOver = true;
     victor = gameBoardArray[2];
-    // console.log(victor + ' has won.');
     $('.info').text('The winner is  ' + victor + '. Press the New Game button to play a new game');
   }else if ((gameBoardArray[0] === 'o') && gameBoardArray[0] === gameBoardArray[1] && gameBoardArray[1] === gameBoardArray[2]) {
     victor = gameBoardArray[0];
     gameIsOver = true;
-    // console.log(victor + ' has won.');
     $('.info').text('The winner is  ' + victor + '. Press the New Game button to play a new game');
   } else if ((gameBoardArray[3] === 'o') && gameBoardArray[3] === gameBoardArray[4] && gameBoardArray[4] === gameBoardArray[5]) {
     gameIsOver = true;
     victor = gameBoardArray[3];
-    // console.log(victor + ' has won.');
     $('.info').text('The winner is  ' + victor + '. Press the New Game button to play a new game');
   } else if ((gameBoardArray[6] === 'o') && gameBoardArray[6] === gameBoardArray[7] && gameBoardArray[7] === gameBoardArray[8]) {
     gameIsOver = true;
     victor = gameBoardArray[6];
-    // console.log(victor + ' has won.');
     $('.info').text('The winner is  ' + victor + '. Press the New Game button to play a new game');
   } else if ((gameBoardArray[0] === 'o') && gameBoardArray[0] === gameBoardArray[3] && gameBoardArray[3] === gameBoardArray[6]) {
     gameIsOver = true;
     victor = gameBoardArray[0];
-    // console.log(victor + ' has won.');
     $('.info').text('The winner is  ' + victor + '. Press the New Game button to play a new game');
   } else if ((gameBoardArray[1] === 'o') && gameBoardArray[1] === gameBoardArray[4] && gameBoardArray[4] === gameBoardArray[7]) {
     gameIsOver = true;
     victor = gameBoardArray[1];
-    // console.log(victor + ' has won.');
     $('.info').text('the winner is  ' + victor + '. Press the New Game button to play a new game');
   } else if ((gameBoardArray[2] === 'o') && gameBoardArray[2] === gameBoardArray[5] && gameBoardArray[5] === gameBoardArray[8]) {
     gameIsOver = true;
     victor = gameBoardArray[2];
-    // console.log(victor + ' has won.');
     $('.info').text('The winner is  ' + victor + '. Press the New Game button to play a new game');
   } else if ((gameBoardArray[0] === 'o') && gameBoardArray[0] === gameBoardArray[4] && gameBoardArray[4] === gameBoardArray[8]) {
     gameIsOver = true;
     victor = gameBoardArray[0];
-    // console.log(victor + ' has won.');
     $('.info').text('The winner is  ' + victor + '. Press the New Game button to play a new game');
   } else if ((gameBoardArray[2] === 'o') && gameBoardArray[2] === gameBoardArray[4] && gameBoardArray[4] === gameBoardArray[6]) {
     gameIsOver = true;
     victor = gameBoardArray[2];
-    // console.log(victor + ' has won.');
     $('.info').text('The winner is  ' + victor + '. Press the New Game button to play a new game');
   }
 };
 
 const gameResolutionTie = function() {
   if (gameTurns === 9) {
-    //console.log('Tie');
     $('.info').text('It is a tie. Press the New Game button to play a new game.');
     gameIsOver = true;
   }
@@ -185,7 +165,6 @@ const setGame = function() {
   gameResolutionTie();
   hideBoardAfterResolution();
   api.updateGame(i, $(this).text(), gameIsOver);
-  //console.log(gameBoardArray);
 };
 
 module.exports = {
