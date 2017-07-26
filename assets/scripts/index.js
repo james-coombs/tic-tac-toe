@@ -22,5 +22,4 @@ $(() => {
   $('#get-game-by-id').on('submit', gameEvents.onGetGameById);
   //$('#get-game-by-id').on('submit', gameEvents.createOldGameArray);
   $('#get-games-played-button').on('click', gameEvents.onGetGamesPlayed);
-
 });
