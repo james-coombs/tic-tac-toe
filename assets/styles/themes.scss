@@ -39,13 +39,17 @@ h2 {
 }
 
 .game-board {
-  margin: 0 35%;
+  margin-left: 21%;
   text-align: center;
 }
 
 input {
   border: 1px solid #cccccc;
   background-color: #ffffff;
+  color: $colorBlack;
+}
+
+.modal-title {
   color: $colorBlack;
 }
 

@@ -148,13 +148,13 @@ const hideBoardAfterResolution = function () {
 const setGame = function() {
   let i;
   if (player === 'x' && $(this).text() === '') {
-    $(this).text('x');
+    $(this).text('x').css("font-size", 80 + "px");;
     gameTurns++;
     player = 'o';
     $('.info').text('it is ' + player + '\'s move');
   }
   if (player === 'o' && $(this).text() === '') {
-    $(this).text('o');
+    $(this).text('o').css("font-size", 80 + "px");;
     gameTurns++;
     player = 'x';
     $('.info').text('it is ' + player + '\'s move');

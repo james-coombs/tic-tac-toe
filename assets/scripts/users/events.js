@@ -34,6 +34,7 @@ const onSignOutUser = function() {
   $('.info').text('You signed out. Sign in to play again.');
   $('.game-board').hide();
   $('.game-actions').hide();
+  $('.game-querys').hide();
   api.signOutUser()
     .done(ui.signOutSuccess)
     .fail(ui.failure);

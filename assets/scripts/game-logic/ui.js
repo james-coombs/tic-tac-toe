@@ -24,6 +24,7 @@ const onError = function() {
   $('.info').text('Ah ah ah, you didn\'t say the magic word');
   $('.game-board').hide();
   $('.game-actions').hide();
+  $('.game-querys').hide();
 };
 
 module.exports = {

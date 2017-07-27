@@ -7,8 +7,8 @@ const userEvents = require('./users/events');
 const gameEvents = require('./game-logic/events');
 
 $(() => {
-  $('.break-shit').on('click', gameEvents.onBreakShit);
   $('.game-board').hide();
+  $('.game-querys').hide();
   $('.game-actions').hide();
   $('#new-game-button').hide();
   $('#createUser').on('submit', userEvents.onCreateUser);

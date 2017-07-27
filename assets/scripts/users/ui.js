@@ -15,6 +15,7 @@ const signInSuccess = function(data) {
   $('.info').text('You are signed in as user id ' + data.user.id + ', press the new game button to play.');
   $('.game-actions').show();
   $('#new-game-button').show();
+  $('.game-querys').show();
 };
 
 const createUserOnError = function() {
@@ -30,6 +31,7 @@ const changePasswordSuccess = function() {
 const signOutUserSuccess = function() {
   $('#new-game-button').hide();
   $('.game-actions').hide();
+  $('.game-querys').hide();
 };
 
 module.exports = {
