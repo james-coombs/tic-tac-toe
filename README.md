@@ -1,6 +1,6 @@
 Web Development Immersive Project 1: Tic Tac Toe
 
-https://james-coombs.github.io/project-1-tic-tac-toe/
+https://james-coombs.github.io/tic-tac-toe/
 
 For this project I used multiple technologies:
 -git
