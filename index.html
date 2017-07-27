@@ -33,8 +33,6 @@
     </div>
   </div>
 
-
-
   <!-- sign-in-modal -->
   <div class="modal fade text-center" id="sign-in-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
@@ -91,15 +89,15 @@
       </button>
           <!-- Button-trigger-sign-in-modal -->
           <button type="button" id="sign-in-modal-button" class="btn btn-default navbar-btn sign-out-button" data-toggle="modal" data-target="#sign-in-modal">
-        Sign In
-      </button>
-      <button type="button" class="btn btn-default navbar-btn sign-out-button">Sign Out</button>
+            Sign In
+          </button>
+          <button type="button" class="user-actions btn btn-default navbar-btn sign-out-button">Sign Out</button>
         </nav>
       </div>
       <!--Game actions nav-->
       <div class="col-xs-12">
         <!-- Button-trigger-change-password-modal -->
-        <button type="button" id="change-password-modal-button" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#change-password-modal">
+        <button type="button" id="change-password-modal-button" class="user-actions btn btn-default navbar-btn" data-toggle="modal" data-target="#change-password-modal">
         Change Password
       </button>
       </div>
@@ -147,12 +145,16 @@
       </div>
     </div>
     <div class="col-xs-12 text-center game-querys">
-      <button type="button" id="new-game-button" class="btn btn-default navbar-btn">New Game</button>
-      <button type="button" id="get-games-played-button" class="btn btn-default navbar-btn">Get Games Played</button>
-      <form id="get-game-by-id">
-        <input name="getGameById" type="number" placeholder="Game ID">
-        <input type="submit" value="Get game by ID" class="btn btn-default navbar-btn">
-      </form>
+      <div class="col-xs-12">
+        <button type="button" id="new-game-button" class="btn btn-default navbar-btn">New Game</button>
+        <button type="button" id="get-games-played-button" class="btn btn-default navbar-btn">Get Games Played</button>
+      </div>
+      <div class="col-xs-12">
+        <form id="get-game-by-id">
+          <input name="getGameById" type="number" class="game-id form-control" placeholder="Game ID" aria-describedby="basic">
+          <input type="submit" value="Get game by ID" class="btn btn-default navbar-btn">
+        </form>
+      </div>
     </div>
   </div>
 

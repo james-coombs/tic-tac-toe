@@ -9,7 +9,7 @@ const gameEvents = require('./game-logic/events');
 $(() => {
   $('.game-board').hide();
   $('.game-querys').hide();
-  $('.game-actions').hide();
+  $('.user-actions').hide();
   $('#new-game-button').hide();
   $('#createUser').on('submit', userEvents.onCreateUser);
   $('#createUser').on('submit');

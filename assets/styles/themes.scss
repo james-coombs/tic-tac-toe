@@ -1,7 +1,6 @@
 $unit: 10px;
 $width: (4 * $unit);
 $height: (4 * $unit);
-$colorBlack: #000000;
 
 body {
   background: url('../../images/green_background.jpg') no-repeat center center fixed;
@@ -9,6 +8,12 @@ body {
     -moz-background-size: cover;
   background-size: cover;
   color: $font-color;
+}
+
+.game-id {
+  width: 17%;
+  margin: 0 auto;
+  display: inline;
 }
 
 h1 {
