@@ -4,8 +4,8 @@ $height: (4 * $unit);
 
 body {
   background: url('../../images/green_background.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   background-size: cover;
   color: $font-color;
 }
@@ -25,10 +25,10 @@ h2 {
 }
 
 .board-row {
-     white-space: nowrap;
-     overflow: hidden;
-     width: 80%;
-   }
+  white-space: nowrap;
+  overflow: hidden;
+  width: 80%;
+}
 
 .board-row > .col-xs-4 {
   border: 2px solid $white;
@@ -60,4 +60,56 @@ input {
 
 .sign-out-button {
   color: $colorBlack;
+}
+
+.game-cell {
+  border-radius: 4px;
+}
+
+.game-cell:hover {
+  background-color: rgba(192,192,192,0.3);
+}
+
+.btn {
+  background-color: rgba(192,192,192,0.3);
+}
+
+.form-control {
+  background-color: rgba(192,192,192,0.3);
+  color: $colorBlack;
+}
+
+.modal-content {
+  background: url('../../images/green_background.jpg') no-repeat center center fixed;
+  opacity: 0.9;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  color: $font-color;
+}
+
+input {
+  background-color: rgba(192,192,192,0.3);
+}
+
+input::-webkit-input-placeholder {
+  color: black !important;
+}
+
+input:-moz-placeholder {
+  /* Firefox 18- */
+  color: black !important;
+}
+
+input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: black !important;
+}
+
+input:-ms-input-placeholder {
+  color: black !important;
+}
+
+.trans-grey-bg {
+  background-color: rgba(192,192,192,0.3);
 }
