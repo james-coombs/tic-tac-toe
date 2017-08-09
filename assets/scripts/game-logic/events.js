@@ -12,21 +12,21 @@ let gameBoardArray = ['', '', '', '', '', '', '', '', '', ];
 // game over variable
 let gameIsOver = false;
 // variable for X/O switching
-let player = 'x';
+let player = 'X';
 
 // reset board and 'POST' for new game
 const onNewGame = function onNewGame(event) {
   event.preventDefault();
   $('.game-cell').removeClass('trans-grey-bg');
   $('.game-cell').removeClass('taken');
-  player = 'x';
+  player = 'X';
   gameIsOver = false;
   gameTurns = 0;
   gameBoardArray = ['', '', '', '', '', '', '', '', '', ];
   $('.col-xs-4').text('');
   $('.game-board').show();
   let data = {};
-  player = 'x';
+  player = 'X';
   api.newGame(data)
     .done(ui.newGameSuccess)
     .fail(ui.onError);
@@ -67,67 +67,67 @@ const onGetGamesPlayed = function (data) {
 
 const gameResolutionXorO = function() {
   let victor;
-  if ((gameBoardArray[0] === 'x') && gameBoardArray[0] === gameBoardArray[1] && gameBoardArray[1] === gameBoardArray[2]) {
+  if ((gameBoardArray[0] === 'X') && gameBoardArray[0] === gameBoardArray[1] && gameBoardArray[1] === gameBoardArray[2]) {
     victor = gameBoardArray[0];
     gameIsOver = true;
     $('.info').text('The winner is  ' + victor + '. Press the New Game button to play a new game');
-  } else if ((gameBoardArray[3] === 'x') && gameBoardArray[3] === gameBoardArray[4] && gameBoardArray[4] === gameBoardArray[5]) {
+  } else if ((gameBoardArray[3] === 'X') && gameBoardArray[3] === gameBoardArray[4] && gameBoardArray[4] === gameBoardArray[5]) {
     gameIsOver = true;
     victor = gameBoardArray[3];
     $('.info').text('The winner is  ' + victor + '. Press the New Game button to play a new game');
-  } else if ((gameBoardArray[6] === 'x') && gameBoardArray[6] === gameBoardArray[7] && gameBoardArray[7] === gameBoardArray[8]) {
+  } else if ((gameBoardArray[6] === 'X') && gameBoardArray[6] === gameBoardArray[7] && gameBoardArray[7] === gameBoardArray[8]) {
     gameIsOver = true;
     victor = gameBoardArray[6];
     $('.info').text('The winner is  ' + victor + '. Press the New Game button to play a new game');
-  } else if ((gameBoardArray[0] === 'x') && gameBoardArray[0] === gameBoardArray[3] && gameBoardArray[3] === gameBoardArray[6]) {
+  } else if ((gameBoardArray[0] === 'X') && gameBoardArray[0] === gameBoardArray[3] && gameBoardArray[3] === gameBoardArray[6]) {
     gameIsOver = true;
     victor = gameBoardArray[0];
     $('.info').text('The winner is  ' + victor + '. Press the New Game button to play a new game');
-  } else if ((gameBoardArray[1] === 'x') && gameBoardArray[1] === gameBoardArray[4] && gameBoardArray[4] === gameBoardArray[7]) {
+  } else if ((gameBoardArray[1] === 'X') && gameBoardArray[1] === gameBoardArray[4] && gameBoardArray[4] === gameBoardArray[7]) {
     gameIsOver = true;
     victor = gameBoardArray[1];
     $('.info').text('The winner is  ' + victor + '. Press the New Game button to play a new game');
-  } else if ((gameBoardArray[2] === 'x') && gameBoardArray[2] === gameBoardArray[5] && gameBoardArray[5] === gameBoardArray[8]) {
+  } else if ((gameBoardArray[2] === 'X') && gameBoardArray[2] === gameBoardArray[5] && gameBoardArray[5] === gameBoardArray[8]) {
     gameIsOver = true;
     victor = gameBoardArray[2];
     $('.info').text('The winner is  ' + victor + '. Press the New Game button to play a new game');
-  } else if ((gameBoardArray[0] === 'x') && gameBoardArray[0] === gameBoardArray[4] && gameBoardArray[4] === gameBoardArray[8]) {
+  } else if ((gameBoardArray[0] === 'X') && gameBoardArray[0] === gameBoardArray[4] && gameBoardArray[4] === gameBoardArray[8]) {
     gameIsOver = true;
     victor = gameBoardArray[0];
     $('.info').text('The winner is  ' + victor + '. Press the New Game button to play a new game');
-  } else if ((gameBoardArray[2] === 'x') && gameBoardArray[2] === gameBoardArray[4] && gameBoardArray[4] === gameBoardArray[6]) {
+  } else if ((gameBoardArray[2] === 'X') && gameBoardArray[2] === gameBoardArray[4] && gameBoardArray[4] === gameBoardArray[6]) {
     gameIsOver = true;
     victor = gameBoardArray[2];
     $('.info').text('The winner is  ' + victor + '. Press the New Game button to play a new game');
-  }else if ((gameBoardArray[0] === 'o') && gameBoardArray[0] === gameBoardArray[1] && gameBoardArray[1] === gameBoardArray[2]) {
+  }else if ((gameBoardArray[0] === 'O') && gameBoardArray[0] === gameBoardArray[1] && gameBoardArray[1] === gameBoardArray[2]) {
     victor = gameBoardArray[0];
     gameIsOver = true;
     $('.info').text('The winner is  ' + victor + '. Press the New Game button to play a new game');
-  } else if ((gameBoardArray[3] === 'o') && gameBoardArray[3] === gameBoardArray[4] && gameBoardArray[4] === gameBoardArray[5]) {
+  } else if ((gameBoardArray[3] === 'O') && gameBoardArray[3] === gameBoardArray[4] && gameBoardArray[4] === gameBoardArray[5]) {
     gameIsOver = true;
     victor = gameBoardArray[3];
     $('.info').text('The winner is  ' + victor + '. Press the New Game button to play a new game');
-  } else if ((gameBoardArray[6] === 'o') && gameBoardArray[6] === gameBoardArray[7] && gameBoardArray[7] === gameBoardArray[8]) {
+  } else if ((gameBoardArray[6] === 'O') && gameBoardArray[6] === gameBoardArray[7] && gameBoardArray[7] === gameBoardArray[8]) {
     gameIsOver = true;
     victor = gameBoardArray[6];
     $('.info').text('The winner is  ' + victor + '. Press the New Game button to play a new game');
-  } else if ((gameBoardArray[0] === 'o') && gameBoardArray[0] === gameBoardArray[3] && gameBoardArray[3] === gameBoardArray[6]) {
+  } else if ((gameBoardArray[0] === 'O') && gameBoardArray[0] === gameBoardArray[3] && gameBoardArray[3] === gameBoardArray[6]) {
     gameIsOver = true;
     victor = gameBoardArray[0];
     $('.info').text('The winner is  ' + victor + '. Press the New Game button to play a new game');
-  } else if ((gameBoardArray[1] === 'o') && gameBoardArray[1] === gameBoardArray[4] && gameBoardArray[4] === gameBoardArray[7]) {
+  } else if ((gameBoardArray[1] === 'O') && gameBoardArray[1] === gameBoardArray[4] && gameBoardArray[4] === gameBoardArray[7]) {
     gameIsOver = true;
     victor = gameBoardArray[1];
     $('.info').text('the winner is  ' + victor + '. Press the New Game button to play a new game');
-  } else if ((gameBoardArray[2] === 'o') && gameBoardArray[2] === gameBoardArray[5] && gameBoardArray[5] === gameBoardArray[8]) {
+  } else if ((gameBoardArray[2] === 'O') && gameBoardArray[2] === gameBoardArray[5] && gameBoardArray[5] === gameBoardArray[8]) {
     gameIsOver = true;
     victor = gameBoardArray[2];
     $('.info').text('The winner is  ' + victor + '. Press the New Game button to play a new game');
-  } else if ((gameBoardArray[0] === 'o') && gameBoardArray[0] === gameBoardArray[4] && gameBoardArray[4] === gameBoardArray[8]) {
+  } else if ((gameBoardArray[0] === 'O') && gameBoardArray[0] === gameBoardArray[4] && gameBoardArray[4] === gameBoardArray[8]) {
     gameIsOver = true;
     victor = gameBoardArray[0];
     $('.info').text('The winner is  ' + victor + '. Press the New Game button to play a new game');
-  } else if ((gameBoardArray[2] === 'o') && gameBoardArray[2] === gameBoardArray[4] && gameBoardArray[4] === gameBoardArray[6]) {
+  } else if ((gameBoardArray[2] === 'O') && gameBoardArray[2] === gameBoardArray[4] && gameBoardArray[4] === gameBoardArray[6]) {
     gameIsOver = true;
     victor = gameBoardArray[2];
     $('.info').text('The winner is  ' + victor + '. Press the New Game button to play a new game');
@@ -149,28 +149,26 @@ const hideBoardAfterResolution = function () {
 
 const setGame = function() {
   let i;
-  if (player === 'x' && $(this).text() === '') {
+  if (player === 'X' && $(this).find('p').text() === '') {
     $(this).append('<p>X</p>').css("font-size", 70 + "px");
-    $(this).addClass('trans-grey-bg');
-    $(this).addClass('taken');
+    $(this).addClass('trans-grey-bg taken');
     gameTurns++;
-    player = 'o';
+    player = 'O';
     $('.info').text('it is ' + player + '\'s move');
   }
-  if (player === 'o' && $(this).text() === '') {
+  if (player === 'O' && $(this).find('p').text() === '') {
     $(this).append('<p>O</p>').css("font-size", 70 + "px");
-    $(this).addClass('trans-grey-bg');
-    $(this).addClass('taken');
+    $(this).addClass('trans-grey-bg taken');
     gameTurns++;
-    player = 'x';
+    player = 'X';
     $('.info').text('it is ' + player + '\'s move');
   }
   i = $(this).data('index');
-  gameBoardArray[i] = $(this).text();
+  gameBoardArray[i] = $(this).find('p').text();
   gameResolutionXorO();
   gameResolutionTie();
   hideBoardAfterResolution();
-  api.updateGame(i, $(this).text(), gameIsOver);
+  api.updateGame(i, $(this).find('p').text(), gameIsOver);
 };
 
 module.exports = {

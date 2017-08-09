@@ -139,14 +139,13 @@ input {
   animation-iteration-count: none;
 }
 
-.btn {
+.btn,
+.btn:active,
+.btn:visited,
+.btn:focus {
   background-color: rgba(192,192,192,0.3);
   color: white;
   text-shadow: rgb(153, 153, 153) 1px 0px 0px;
-}
-
-.btn:active {
-  background-color: rgba(192,192,192,0.3);
 }
 
 .btn:hover {
