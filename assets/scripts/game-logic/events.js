@@ -17,6 +17,8 @@ let player = 'x';
 // reset board and 'POST' for new game
 const onNewGame = function onNewGame(event) {
   event.preventDefault();
+  $('.game-cell').removeClass('trans-grey-bg');
+  $('.game-cell').removeClass('taken');
   player = 'x';
   gameIsOver = false;
   gameTurns = 0;
@@ -148,13 +150,17 @@ const hideBoardAfterResolution = function () {
 const setGame = function() {
   let i;
   if (player === 'x' && $(this).text() === '') {
-    $(this).text('x').css("font-size", 80 + "px");;
+    $(this).append('<p>X</p>').css("font-size", 70 + "px");
+    $(this).addClass('trans-grey-bg');
+    $(this).addClass('taken');
     gameTurns++;
     player = 'o';
     $('.info').text('it is ' + player + '\'s move');
   }
   if (player === 'o' && $(this).text() === '') {
-    $(this).text('o').css("font-size", 80 + "px");;
+    $(this).append('<p>O</p>').css("font-size", 70 + "px");
+    $(this).addClass('trans-grey-bg');
+    $(this).addClass('taken');
     gameTurns++;
     player = 'x';
     $('.info').text('it is ' + player + '\'s move');
