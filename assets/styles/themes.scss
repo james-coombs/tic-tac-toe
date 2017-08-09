@@ -2,6 +2,10 @@ $unit: 10px;
 $width: (4 * $unit);
 $height: (4 * $unit);
 
+* {
+  font-family: 'Playfair Display', serif;
+}
+
 body {
   background: url('../../images/green_background.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -17,11 +21,22 @@ body {
 }
 
 h1 {
+  font-size: 5rem;
   text-align: center;
+  text-shadow: rgb(153, 153, 153) 1px 0px 0px;
+  padding-bottom: 10px;
 }
 
 h2 {
+  font-size: 3rem;
   text-align: center;
+  text-shadow: rgb(153, 153, 153) 1px 0px 0px;
+  padding-bottom: 20px;
+}
+
+h4 {
+  color: white !important;
+  text-shadow: rgb(153, 153, 153) 1px 0px 0px;
 }
 
 .board-row {
@@ -31,7 +46,7 @@ h2 {
 }
 
 .board-row > .col-xs-4 {
-  border: 2px solid $white;
+  border: 2px solid rgba(192,192,192,1);
   box-sizing: border-box;
   height: 12rem;
   padding: 2px;
@@ -51,7 +66,7 @@ h2 {
 input {
   border: 1px solid #cccccc;
   background-color: #ffffff;
-  color: $colorBlack;
+  color: white;
 }
 
 .modal-title {
@@ -62,16 +77,82 @@ input {
   color: $colorBlack;
 }
 
+@-webkit-keyframes pulse {
+  25% {
+    -webkit-transform: scale(0.99);
+    transform: scale(0.99);
+  }
+  75% {
+    -webkit-transform: scale(0.89);
+    transform: scale(0.89);
+  }
+}
+
+@keyframes pulse {
+  25% {
+    -webkit-transform: scale(0.99);
+    -ms-transform: scale(0.99);
+    transform: scale(0.99);
+  }
+  75% {
+    -webkit-transform: scale(0.89);
+    -ms-transform: scale(0.89);
+    transform: scale(0.89);
+  }
+}
+
 .game-cell {
-  border-radius: 4px;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.game-cell p {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 110px;
 }
 
 .game-cell:hover {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.game-cell.taken:hover {
   background-color: rgba(192,192,192,0.3);
+  -webkit-animation-name: none;
+  animation-name: none;
+  -webkit-animation-duration: none;
+  animation-duration: none;
+  -webkit-animation-timing-function: none;
+  animation-timing-function: none;
+  -webkit-animation-iteration-count: none;
+  animation-iteration-count: none;
 }
 
 .btn {
   background-color: rgba(192,192,192,0.3);
+  color: white;
+  text-shadow: rgb(153, 153, 153) 1px 0px 0px;
+}
+
+.btn:active {
+  background-color: rgba(192,192,192,0.3);
+}
+
+.btn:hover {
+  background-color: rgba(192,192,192,0.6);
+  border: 1px solid white;
+  color: white;
 }
 
 .form-control {
@@ -90,26 +171,35 @@ input {
 
 input {
   background-color: rgba(192,192,192,0.3);
+  text-shadow: rgb(153, 153, 153) 1px 0px 0px;
 }
 
 input::-webkit-input-placeholder {
-  color: black !important;
+  color: white !important;
+  text-shadow: rgb(153, 153, 153) 1px 0px 0px;
 }
 
 input:-moz-placeholder {
   /* Firefox 18- */
-  color: black !important;
+  color: white !important;
+  text-shadow: rgb(153, 153, 153) 1px 0px 0px;
 }
 
 input::-moz-placeholder {
   /* Firefox 19+ */
-  color: black !important;
+  color: white !important;
+  text-shadow: rgb(153, 153, 153) 1px 0px 0px;
 }
 
 input:-ms-input-placeholder {
-  color: black !important;
+  color: white !important;
+  text-shadow: rgb(153, 153, 153) 1px 0px 0px;
 }
 
 .trans-grey-bg {
   background-color: rgba(192,192,192,0.3);
+}
+
+.board-container {
+  text-align: center;
 }

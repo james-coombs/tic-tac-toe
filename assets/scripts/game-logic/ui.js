@@ -22,9 +22,9 @@ const getGamesPlayedSuccess = function (data) {
 
 const onError = function() {
   $('.info').text('Ah ah ah, you didn\'t say the magic word');
-  // $('.game-board').hide();
-  // $('.user-actions').hide();
-  // $('.game-querys').hide();
+  $('.game-board').hide();
+  $('.user-actions').hide();
+  $('.game-querys').hide();
 };
 
 module.exports = {

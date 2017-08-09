@@ -5,8 +5,8 @@ const app = require('../app.js');
 const onCreateUserSuccess = function(data) {
   if (data) {
     $('.info').text('You created user id ' + data.user.id + ', sign in to your new account to play.');
-    // $('.user-actions').hide();
-    // $('#new-game-button').hide();
+    $('.user-actions').hide();
+    $('#new-game-button').hide();
   }
 };
 
@@ -20,8 +20,8 @@ const signInSuccess = function(data) {
 
 const createUserOnError = function() {
   $('.info').text('Something went wrong!');
-  // $('.user-actions').hide();
-  // $('#new-game-button').hide();
+  $('.user-actions').hide();
+  $('#new-game-button').hide();
 };
 
 const changePasswordSuccess = function() {
@@ -29,9 +29,9 @@ const changePasswordSuccess = function() {
 };
 
 const signOutUserSuccess = function() {
-  // $('#new-game-button').hide();
-  // $('.user-actions').hide();
-  // $('.game-querys').hide();
+  $('#new-game-button').hide();
+  $('.user-actions').hide();
+  $('.game-querys').hide();
 };
 
 module.exports = {
